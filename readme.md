@@ -2,7 +2,7 @@
 
 Easily write your [Express](http://expressjs.com/) Node application in the [ES2015 syntax](https://babeljs.io/docs/learn-es2015/). Ideal for writing API's.
 
-Uses [Babel](https://babeljs.io/) to compile your code, so you have access to the full ES2015 spec.
+Uses [Babel](https://babeljs.io/) to compile your code, so you have access to the full ES2015 spec regargless of what version of Node.js your server is running.
 
 ## Run Locally
 
