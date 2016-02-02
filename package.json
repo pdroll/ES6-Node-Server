@@ -7,7 +7,7 @@
       "type" : "git",
       "url" : "https://github.com/pdroll/ES6-Node-Server.git"
   },
-  "license": "ISC",
+  "license": "WTFPL",
   "main": "index.js",
   "scripts": {
     "prestart": "npm install",
