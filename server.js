@@ -1,22 +1,28 @@
 import Express from 'express';
 
-let app = Express();
+const app = new Express();
+
+/*
+ * Demo ES6 Support
+ */
+
+// Object Spread Operator
+const a = { a: 1, b: 2 };
+const b = { b: 1, foo: 'bar' };
+const c = { ...a, ...b, c: 1 };
+
+console.log(c);
 
 app.set('port', process.env.PORT || 3000);
 
 app.get('/', (req, res) => {
-	const a = { a: 1, b: 2 };
-	const b = { b: 1, foo: 'bar' };
-	const c = { ...a, ...b, c: 1};
-
-	console.log(c);
-
-	res.send(`
-		<h1>Hello World</h1>
-		<h2>from a Node.js Server written in ECMAScript 6!</h2>
-		<p>Start editing <code>server.js</code> to make your app come to life!</p>`);
+  res.send(`
+    <h1>Hello World</h1>
+    <h2>from a Node.js Server written in ECMAScript 6!</h2>
+    <p>Start editing <code>server.js</code> to make your app come to life!</p>`
+  );
 });
 
 app.listen(app.get('port'), () => {
-	console.log(`Express server listening on port ${app.get('port')}`);
+  console.log(`Express server listening on port ${app.get('port')}`);
 });
