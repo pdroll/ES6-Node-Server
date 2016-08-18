@@ -2,7 +2,9 @@
 
 Easily write your [Express](http://expressjs.com/) Node application in the [ES2015 syntax](https://babeljs.io/docs/learn-es2015/). Ideal for writing API's.
 
-Uses [Babel](https://babeljs.io/) to compile your code, so you have access to the full ES2015 spec regargless of what version of Node.js your server is running.
+Uses [Babel](https://babeljs.io/) to compile your code, so you have access to the full ES2015 spec (and then some) regardless of what version of Node.js your server is running. 
+
+Support for the [object spread operator](https://babeljs.io/docs/plugins/transform-object-rest-spread/) and [class properties](https://babeljs.io/docs/plugins/transform-class-properties/) is included for your programming enjoyment.
 
 ## Run Locally
 
@@ -28,7 +30,7 @@ Then you can run the compiled version by running:
 node compiled_server.js
 ```
 
-## Run in Production with High Availablity
+## Run in Production with High Availability
 
 If you want to ensure your application stays online, even if your script encounters an error, [PM2](http://pm2.keymetrics.io/) has your back.
 

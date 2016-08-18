@@ -3,7 +3,7 @@ import Express from 'express';
 const app = new Express();
 
 /*
- * Demo ES6 Support
+ * Demo ES6/ES7 Support
  */
 
 // Object Spread Operator
@@ -12,6 +12,23 @@ const b = { b: 1, foo: 'bar' };
 const c = { ...a, ...b, c: 1 };
 
 console.log(c);
+
+// Class Properties
+class MyClass {
+  myProp = 42;
+  static myStaticProp = 21;
+
+  constructor() {
+    console.log(this.myProp); // Prints '42'
+    console.log(MyClass.myStaticProp); // Prints '21'
+  }
+}
+console.log(new MyClass());
+
+/*
+ * End Demo Code
+ */
+
 
 app.set('port', process.env.PORT || 3000);
 
