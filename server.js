@@ -5,6 +5,12 @@ let app = Express();
 app.set('port', process.env.PORT || 3000);
 
 app.get('/', (req, res) => {
+	const a = { a: 1, b: 2 };
+	const b = { b: 1, foo: 'bar' };
+	const c = { ...a, ...b, c: 1};
+
+	console.log(c);
+
 	res.send(`
 		<h1>Hello World</h1>
 		<h2>from a Node.js Server written in ECMAScript 6!</h2>
