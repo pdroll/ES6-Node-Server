@@ -3,28 +3,28 @@
   "version": "1.0.0",
   "description": "Node.js Server boilerplate, that can be written in ES6.",
   "author": "Pete Droll <droll.p@gmail.com> (https://github.com/pdroll/)",
-  "repository" : {
-      "type" : "git",
-      "url" : "https://github.com/pdroll/ES6-Node-Server.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pdroll/ES6-Node-Server.git"
   },
   "license": "WTFPL",
   "main": "index.js",
   "scripts": {
     "prestart": "npm install",
     "start": "nodemon index.js",
-    "precompile" : "npm install",
+    "precompile": "npm install",
     "compile": "babel server.js > compiled_server.js",
     "prestartProd": "npm run compile",
     "startProd": "pm2 start pm2.json",
     "stopProd": "pm2 stop pm2.json"
   },
   "devDependencies": {
-    "babel-cli": "^6.4.5",
-    "babel-preset-es2015": "^6.3.13",
-    "babel-register": "^6.4.3",
-    "nodemon": "^1.8.1"
+    "babel-cli": "^6.11.4",
+    "babel-preset-es2015": "^6.13.2",
+    "babel-register": "^6.11.6",
+    "nodemon": "^1.10.0"
   },
   "dependencies": {
-    "express": "^4.13.4"
+    "express": "^4.14.0"
   }
 }
