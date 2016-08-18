@@ -1,8 +1,8 @@
 {
-  "name"            : "node-server",
-  "script"          : "compiled_server.js",
-  "error_file"      : "logs/error.log",
-  "out_file"        : "logs/stdout.log",
-  "pid_file"        : "logs/node-server.pid",
-  "log_date_format" : "YYYY-MM-DD HH:mm:ss Z"
+	"name"            : "node-server",
+	"script"          : "compiled_server.js",
+	"error_file"      : "logs/error.log",
+	"out_file"        : "logs/stdout.log",
+	"pid_file"        : "logs/node-server.pid",
+	"log_date_format" : "YYYY-MM-DD HH:mm:ss Z"
 }
